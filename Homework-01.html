@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOMEWORK01</title>
+    <style>
+        table {
+            width: 100%;
+            color: rgb(9, 90, 86);
+            background:rgb(198, 241, 141);
+            border-spacing: 0px;
+            border: 1px solid #fafabc;
+            border-collapse: collapse;
+            }
+        td {
+            width: 10%;
+            padding: 1rem;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            text-align: center;
+            border: 1px solid #fafabc;
+            font-size: 1rem;
+        }
+        .is-prime {
+            color: rgb(247, 247, 247);
+            background:rgb(144, 214, 117);
+        }
+    </style>
+</head>
+<body>
+  
+    <table>
+        <script>
+            let startNumber = 1;
+            let tenDigits = 0;
+            for (let row = tenDigits; row < 20; row++){
+                document.write("<tr>");
+                    for(let colum = startNumber; colum <= 20; colum++){
+                        let currentNumber = parseInt(row * 20 + colum);  
+                        let isPrimeNum;
+                        for (let x = 2; x < currentNumber; x++){    
+                            if(currentNumber % x == 0) {
+                                isPrimeNum = true;   
+                            }
+                        }
+                        document.write("<td class='" + (isPrimeNum || currentNumber =="1" ? "":"is-prime") + "'>");
+                        document.write(currentNumber);
+                        document.write("</td>");
+                    }
+                document.write("</tr>");
+            }
+        </script>
+
+    </table>
+</body>
+</html>

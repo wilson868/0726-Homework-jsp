@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOMEWORK02</title>
+    <style>
+        article {
+            max-width: 30rem;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        input {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            margin-bottom: 1rem;
+        }
+        div span {
+            display: block;
+        }
+        div input[type = "text"] {
+            display: block;
+            width: 100%;
+            height: 2rem;
+            font-size: 1rem;
+        }
+        div select {
+            display: block;
+            width: 100%;
+            height: 2rem;
+        }
+    
+    </style>
+</head>
+<body>
+    <article>
+         <div>
+            <span>身分證產生器 </span>
+        </div>
+        <div>
+            <span>ID: </span><input id="bid" type="text">
+        </div>
+        <div>
+            <span>Gender: </span>
+            <input type="radio" id="c1" name="genderGroup" value="1" checked>
+            <label for="c1">Male</label>
+            <input type="radio" id="c2" name="genderGroup" value="2">
+            <label for="c2">Female</label>
+        </div>
+
+        <div>
+            <select name=""id="selectArea">
+                <option value="A">台北市</option>
+                <option value="B">台中市</option>
+                <option value="C">基隆市</option>
+                <option value="D">臺南市</option>
+                <option value="E">高雄市</option>
+                <option value="F">新北市</option>
+                <option value="G">宜蘭縣</option>
+                <option value="H">桃園市</option>
+                <option value="I">嘉義市</option>
+                <option value="J">新竹縣</option>
+                <option value="K">苗栗縣</option>
+                <option value="M">南投縣</option>
+                <option value="N">彰化縣</option>
+                <option value="O">新竹市</option>
+                <option value="P">雲林縣</option>
+                <option value="Q">嘉義縣</option>
+                <option value="T">屏東縣</option>
+                <option value="U">花蓮縣</option>
+                <option value="V">臺東縣</option>
+                <option value="W">金門縣</option>
+                <option value="X">澎湖縣</option>
+                <option value="Z">連江縣</option>
+            </select>
+        </div>
+
+        <div>
+            <button onclick="createTWIDByAll();">產生</button>
+        </div>
+         
+
+    </article>
+
+    <script src="homework.js"></script>
+</body>
+</html>
